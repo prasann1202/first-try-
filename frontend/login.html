@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Attendance System - Home</title>
+    <title>Login - Student Attendance System</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -16,10 +16,6 @@
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
         }
         nav {
             background-color: #2c3e50;
@@ -39,57 +35,57 @@
         }
         .container {
             padding: 20px;
-            max-width: 1100px;
-            margin: auto;
+            max-width: 400px;
+            margin: 40px auto;
         }
         .card {
             background: white;
-            padding: 20px;
-            margin: 15px 0;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-        }
-        .card h2, .card h3 {
+        h2 {
+            text-align: center;
             color: #2c3e50;
         }
-        .quick-links ul {
-            list-style: none;
-            padding: 0;
-        }
-        .quick-links ul li {
-            margin: 10px 0;
-        }
-        .quick-links a {
-            text-decoration: none;
-            color: #1abc9c;
+        label {
             font-weight: bold;
-            transition: color 0.3s ease;
+            display: block;
+            margin-top: 10px;
         }
-        .quick-links a:hover {
-            color: #16a085;
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #16a085;
         }
         footer {
             background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 12px;
-            margin-top: 20px;
+            margin-top: 40px;
             font-size: 14px;
         }
-        /* Responsive */
         @media (max-width: 600px) {
-            nav a {
-                padding: 10px;
-                font-size: 14px;
-            }
-            header h1 {
-                font-size: 1.5rem;
-            }
+            nav a { padding: 10px; font-size: 14px; }
         }
     </style>
 </head>
@@ -97,7 +93,7 @@
 
     <header>
         <h1>📚 Student Attendance System</h1>
-        <p>Efficiently manage and track attendance</p>
+        <p>Login to your account</p>
     </header>
 
     <nav>
@@ -112,20 +108,16 @@
 
     <div class="container">
         <div class="card">
-            <h2>Welcome to Student Attendance System</h2>
-            <p>
-                This system allows teachers and administrators to manage student records,
-                mark daily attendance, and view attendance reports in a simple and efficient way.
-            </p>
-        </div>
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <label for="username">Username / Email</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
 
-        <div class="card quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="register.html">➕ Add New Student</a></li>
-                <li><a href="attendance.html">✅ Mark Attendance</a></li>
-                <li><a href="view-attendance.html">📄 View Attendance Records</a></li>
-            </ul>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+                <button type="submit">Login</button>
+            </form>
         </div>
     </div>
 
