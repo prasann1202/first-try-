@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#first{
+    background-color: rgb(226, 17, 233);
+    color: rgb(22, 0, 189);
+}
+#second{
+    color: saddlebrown;
+    background-color: rgb(17, 226, 17);
+}
+
+div p{
+    color: darkmagenta;
+    font-size: 35px;
+}
